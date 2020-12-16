@@ -15,15 +15,3 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
 
-before_deploy:
-  - rm target/app.jar
-  - mv target/*.jar target/app.jar
-
-deploy:
-  provider: releases
-  api_key:
-    secure: 7d0176c63c8060a8543eeda3e5de0284595d9d51
-  file: target/app.jar
-  skip_cleanup: true
-  on:
-    tags: false
