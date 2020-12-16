@@ -25,7 +25,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: 
+    secure: 7d0176c63c8060a8543eeda3e5de0284595d9d51
   file: target/app.jar
   skip_cleanup: true
   on:
