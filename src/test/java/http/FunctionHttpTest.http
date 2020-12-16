@@ -1,0 +1,37 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+GET http://localhost:8080/api/function/SearchSAO?LON=121&LAT=37
+//Content-Type: application/json
+//测试观测适宜度
+//lon代表经度，LAT代表纬度
+
+###
+
+GET http://localhost:8080/api/function/StarSearch?string=仙后&page=0
+
+###
+
+//八大行星数据测试
+GET http://localhost:8080/api/function/EightPlanets
+
+###
+///日出日落
+GET http://localhost:8080/api/function/SearchSunriseset?year=2020&month=1&day=27&zone=8&lon=116.38&lat=39.9
+
+###
+
+GET http://localhost:8080/api/function/SearchSMoonPhase?year=2020&month=1&day=27
+
+
+###
+
+GET http://localhost:8080/api/function/Calendar?year=2020&month=1&day=30
+###
+
+
+GET  http://localhost:8080/images/index2.jpg
+###
